@@ -1,0 +1,200 @@
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/something"
+android:layout_width="430dp"
+android:layout_height="964dp"
+android:clipToOutline="true"
+android:background="#181824"
+ />
+
+ <RelativeLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+ android:id="@+id/frame_42731"
+ android:layout_width="237dp"
+ android:layout_height="237dp"
+ android:layout_centerHorizontal="true"
+ android:layout_centerVertical="true"
+ android:clipToOutline="true"
+ android:background="@drawable/frame_42731"
+  />
+ 
+ <!-- drawable/frame_42731.xml -->
+ <vector
+ xmlns:android="http://schemas.android.com/apk/res/android"
+ xmlns:aapt="http://schemas.android.com/aapt"
+ android:width="237dp"
+ android:height="237dp"
+ android:viewportWidth="237"
+ android:viewportHeight="237"
+  >
+ <group>
+ <clip-path
+ android:pathData="M118.5 0C183.946 0 237 53.0543 237 118.5C237 183.946 183.946 237 118.5 237C53.0543 237 0 183.946 0 118.5C0 53.0543 53.0543 0 118.5 0Z"
+ />
+ <group
+ android:translateX="1"
+ android:translateY="0"
+ android:pivotX="118.5"
+ android:pivotY="118.5"
+ android:scaleX="2"
+ android:scaleY="2"
+ android:rotation="90"
+ >
+ <path
+ android:pathData="M0 0V237H237V0"
+ >
+ <aapt:attr name="android:fillColor">
+ <gradient
+ android:type="linear"
+ android:startX="59.25"
+ android:startY="118.5"
+ android:endX="177.75"
+ android:endY="118.5"
+ >
+ <item
+ android:color="#7495E8"
+ android:offset="0"
+ />
+ <item
+ android:color="#0C359E"
+ android:offset="1"
+ />
+ </gradient>
+ </aapt:attr>
+ </path>
+ </group>
+ </group>
+ </vector>
+
+ <RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/frame_42731"
+android:layout_width="351.85dp"
+android:layout_height="351.85dp"
+android:layout_alignParentLeft="true"
+android:layout_marginLeft="-136.91dp"
+android:layout_centerVertical="true"
+android:background="@drawable/frame_42731"
+android:alpha="0.3"
+ />
+
+<!-- drawable/frame_42731.xml -->
+<vector
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:aapt="http://schemas.android.com/aapt"
+android:width="351.85dp"
+android:height="351.85dp"
+android:viewportWidth="351.85"
+android:viewportHeight="351.85"
+ >
+<group>
+<clip-path
+android:pathData="M175.926 0C273.087 0 351.851 78.7646 351.851 175.926C351.851 273.087 273.087 351.851 175.926 351.851C78.7646 351.851 0 273.087 0 175.926C0 78.7646 78.7646 0 175.926 0Z"
+/>
+<path
+android:pathData="M175.926 0C273.087 0 351.851 78.7646 351.851 175.926C351.851 273.087 273.087 351.851 175.926 351.851C78.7646 351.851 0 273.087 0 175.926C0 78.7646 78.7646 0 175.926 0Z"
+android:strokeWidth="2"
+android:strokeColor="#CAD9FF"
+/>
+</group>
+</vector>
+
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/frame_42731"
+android:layout_width="761.93dp"
+android:layout_height="761.93dp"
+android:layout_alignParentLeft="true"
+android:layout_marginLeft="-303.64dp"
+android:layout_alignParentTop="true"
+android:layout_marginTop="26.7dp"
+android:background="@drawable/frame_42731"
+android:alpha="0.3"
+ />
+
+<!-- drawable/frame_42731.xml -->
+<vector
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:aapt="http://schemas.android.com/aapt"
+android:width="761.93dp"
+android:height="761.93dp"
+android:viewportWidth="761.93"
+android:viewportHeight="761.93"
+ >
+<group>
+<clip-path
+android:pathData="M380.967 0C591.369 0 761.933 170.565 761.933 380.967C761.933 591.369 591.369 761.933 380.967 761.933C170.565 761.933 0 591.369 0 380.967C0 170.565 170.565 0 380.967 0Z"
+/>
+<path
+android:pathData="M380.967 0C591.369 0 761.933 170.565 761.933 380.967C761.933 591.369 591.369 761.933 380.967 761.933C170.565 761.933 0 591.369 0 380.967C0 170.565 170.565 0 380.967 0Z"
+android:strokeWidth="4"
+android:strokeColor="#CAD9FF"
+/>
+</group>
+</vector>
+
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/frame_42731"
+android:layout_width="636.63dp"
+android:layout_height="636.63dp"
+android:layout_alignParentLeft="true"
+android:layout_marginLeft="-259.05dp"
+android:layout_alignParentTop="true"
+android:layout_marginTop="155.71dp"
+android:background="@drawable/frame_42731"
+android:alpha="0.3"
+ />
+
+<!-- drawable/frame_42731.xml -->
+<vector
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:aapt="http://schemas.android.com/aapt"
+android:width="636.63dp"
+android:height="636.63dp"
+android:viewportWidth="636.63"
+android:viewportHeight="636.63"
+ >
+<group>
+<clip-path
+android:pathData="M318.314 0C494.115 0 636.629 142.514 636.629 318.314C636.629 494.115 494.115 636.629 318.314 636.629C142.514 636.629 0 494.115 0 318.314C0 142.514 142.514 0 318.314 0Z"
+/>
+<path
+android:pathData="M318.314 0C494.115 0 636.629 142.514 636.629 318.314C636.629 494.115 494.115 636.629 318.314 636.629C142.514 636.629 0 494.115 0 318.314C0 142.514 142.514 0 318.314 0Z"
+android:strokeWidth="2"
+android:strokeColor="#CAD9FF"
+/>
+</group>
+</vector>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/frame_42731"
+android:layout_width="495.03dp"
+android:layout_height="495.03dp"
+android:layout_alignParentLeft="true"
+android:layout_marginLeft="-233dp"
+android:layout_alignParentTop="true"
+android:layout_marginTop="224.59dp"
+android:background="@drawable/frame_42731"
+ />
+
+<!-- drawable/frame_42731.xml -->
+<vector
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:aapt="http://schemas.android.com/aapt"
+android:width="495.03dp"
+android:height="495.03dp"
+android:viewportWidth="495.03"
+android:viewportHeight="495.03"
+ >
+<group>
+<clip-path
+android:pathData="M247.513 0C384.21 0 495.025 110.815 495.025 247.513C495.025 384.21 384.21 495.025 247.513 495.025C110.815 495.025 0 384.21 0 247.513C0 110.815 110.815 0 247.513 0Z"
+/>
+<path
+android:pathData="M247.513 0C384.21 0 495.025 110.815 495.025 247.513C495.025 384.21 384.21 495.025 247.513 495.025C110.815 495.025 0 384.21 0 247.513C0 110.815 110.815 0 247.513 0Z"
+android:strokeWidth="2"
+android:strokeColor="#7495E8"
+/>
+</group>
+</vector>

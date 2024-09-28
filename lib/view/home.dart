@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:self_care/widget/horizontal_scroll.dart';
+import 'package:self_care/widget/tabs.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -12,65 +14,135 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff181824),
+      backgroundColor: const Color(0xff181824),
+      // appBar: AppBar(),
       body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Row(
-                    children: [
-                      Image.asset('assets/images/back.png'),
-                      // const Icon(Icons.arrow_back_rounded, color: Colors.white),
-                      const SizedBox(width: 5),
-                      Text(
-                        'Premium Reports',
-                        style: TextStyle(
-                            fontFamily: GoogleFonts.poppins().fontFamily,
-                            fontSize: 20,
-                            color: Colors.white),
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Row(
+                      children: [
+                        Image.asset('assets/images/back.png'),
+                        const SizedBox(width: 5),
+                        Text(
+                          'Premium Reports',
+                          style: TextStyle(
+                              fontFamily: GoogleFonts.poppins().fontFamily,
+                              fontSize: 20,
+                              color: Colors.white),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Image.asset('assets/images/gallay.png'),
+                        const SizedBox(width: 10),
+                        Image.asset('assets/images/bell.png'),
+                      ],
+                    )
+                  ],
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Text(
+                  'Browse our Premium Reports',
+                  style: TextStyle(
+                    fontFamily: GoogleFonts.poppins().fontFamily,
+                    fontSize: 20,
+                    color: Colors.white,
+                  ),
+                ),
+                const SizedBox(height: 20),
+                SizedBox(
+                  height: 56,
+                  child: TextField(
+                    textAlign: TextAlign.start,
+                    decoration: InputDecoration(
+                      filled: true,
+                      fillColor: const Color(0x333D3F6D),
+                      prefix: Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          const SizedBox(width: 5),
+                          Image.asset(
+                            'assets/images/search.png',
+                            fit: BoxFit.cover,
+                            height: 20,
+                          ),
+                          const SizedBox(width: 15),
+                          Text(
+                            'Search Marriage, career, etc.,',
+                            style: TextStyle(
+                              fontFamily: GoogleFonts.poppins().fontFamily,
+                              fontSize: 16,
+                              color: const Color(0xff64658A),
+                            ),
+                          )
+                        ],
                       ),
-                    ],
-                  ),
-                  const Row(
-                    children: [
-                      Icon(Icons.search, color: Colors.white),
-                      SizedBox(width: 10),
-                      Icon(Icons.notifications_none, color: Colors.white),
-                    ],
-                  )
-                ],
-              ),
-              Text(
-                'Browse our Premium Reports',
-                style: TextStyle(
-                  fontFamily: GoogleFonts.poppins().fontFamily,
-                  fontSize: 20,
-                  color: Colors.white,
-                ),
-              ),
-              const SizedBox(height: 20),
-              TextField(
-                decoration: InputDecoration(
-                  filled: true,
-                  fillColor: Color.fromARGB(45, 61, 63, 109),
-                  hintText: 'Search Marriage, career, etc.,',
-                  hintStyle: TextStyle(
-                      fontFamily: GoogleFonts.poppins().fontFamily,
-                      fontSize: 16,
-                      color: Color(0xff64658A)),
-                  prefixIcon: const Icon(Icons.search, color: Colors.white),
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(10),
-                    borderSide: BorderSide.none,
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10),
+                        borderSide: BorderSide.none,
+                      ),
+                    ),
                   ),
                 ),
-              ),
-            ],
+                const SizedBox(height: 20),
+                TabSelector(),
+                const SizedBox(height: 20),
+                Text(
+                  'Marriage',
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: const Color(0x80FFFFFF),
+                    fontFamily: GoogleFonts.poppins().fontFamily,
+                  ),
+                ),
+                const SizedBox(height: 16),
+                const HorizontalScroll(),
+                const SizedBox(height: 20),
+                Text(
+                  'Career',
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: const Color(0x80FFFFFF),
+                    fontFamily: GoogleFonts.poppins().fontFamily,
+                  ),
+                ),
+                const SizedBox(height: 16),
+                const HorizontalScroll(),
+                const SizedBox(height: 20),
+                Text(
+                  'Family',
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: const Color(0x80FFFFFF),
+                    fontFamily: GoogleFonts.poppins().fontFamily,
+                  ),
+                ),
+                const SizedBox(height: 16),
+                const HorizontalScroll(),
+                const SizedBox(height: 20),
+                Text(
+                  'Health',
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: const Color(0x80FFFFFF),
+                    fontFamily: GoogleFonts.poppins().fontFamily,
+                  ),
+                ),
+                const SizedBox(height: 16),
+                const HorizontalScroll(),
+                const SizedBox(height: 40)
+              ],
+            ),
           ),
         ),
       ),
