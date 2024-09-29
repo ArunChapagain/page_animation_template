@@ -15,6 +15,13 @@ class HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return PopScope(
+      canPop: true,
+      onPopInvokedWithResult: (didPop, result) {
+        if (didPop) {
+          widget.reverseAnimation();
+        }
+        // Navigator.pop(context);
+      },
       child: Scaffold(
         backgroundColor: const Color(0xff181824),
         body: SafeArea(

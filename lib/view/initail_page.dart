@@ -53,7 +53,7 @@ class AstrologyAnimationState extends State<AstrologyAnimation>
       vsync: this,
     );
 
-    _blueCircleAnimation = Tween<double>(begin: -240.w, end: -77).animate(
+    _blueCircleAnimation = Tween<double>(begin: -240, end: -77).animate(
       CurvedAnimation(
         parent: _controller,
         curve: const Interval(0.0, 0.4, curve: Curves.easeInOut),
