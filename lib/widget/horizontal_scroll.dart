@@ -18,9 +18,9 @@ class _HorizontalScrollState extends State<HorizontalScroll> {
         itemCount: 4,
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
-          return Padding(
-            padding: const EdgeInsets.only(right: 15),
-            child: const CardWidget(),
+          return const  Padding(
+            padding:  EdgeInsets.only(right: 15),
+            child:  CardWidget(),
           );
         },
       ),

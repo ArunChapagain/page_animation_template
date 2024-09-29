@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:self_care/view/initial_page.dart';
-// import 'package:self_care/widget/animation.dart';
+import 'package:self_care/view/initail_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,10 +17,10 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return const ScreenUtilInit(
-      designSize: const Size(430, 964),
+      designSize: Size(430, 964),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: PlanetoryAnimation(),
+        home: AstrologyAnimation(),
       ),
     );
   }

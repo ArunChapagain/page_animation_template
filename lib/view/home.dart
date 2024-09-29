@@ -4,18 +4,18 @@ import 'package:self_care/widget/horizontal_scroll.dart';
 import 'package:self_care/widget/tabs.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+  final VoidCallback reverseAnimation;
+ const  HomePage({super.key, required this.reverseAnimation});
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  HomePageState createState() => HomePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xff181824),
-      // appBar: AppBar(),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
@@ -23,12 +23,18 @@ class _HomePageState extends State<HomePage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                const SizedBox(height: 10),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Row(
                       children: [
-                        Image.asset('assets/images/back.png'),
+                        GestureDetector(
+                            onTap: () {
+                              widget.reverseAnimation();
+                              Navigator.pop(context);
+                            },
+                            child: Image.asset('assets/images/back.png')),
                         const SizedBox(width: 5),
                         Text(
                           'Premium Reports',
@@ -67,26 +73,41 @@ class _HomePageState extends State<HomePage> {
                     decoration: InputDecoration(
                       filled: true,
                       fillColor: const Color(0x333D3F6D),
-                      prefix: Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          const SizedBox(width: 5),
-                          Image.asset(
-                            'assets/images/search.png',
-                            fit: BoxFit.cover,
-                            height: 20,
-                          ),
-                          const SizedBox(width: 15),
-                          Text(
-                            'Search Marriage, career, etc.,',
-                            style: TextStyle(
-                              fontFamily: GoogleFonts.poppins().fontFamily,
-                              fontSize: 16,
-                              color: const Color(0xff64658A),
-                            ),
-                          )
-                        ],
+                      prefixIcon: Padding(
+                        padding: const EdgeInsets.all(15),
+                        child: Image.asset(
+                          'assets/images/search.png',
+                          fit: BoxFit.cover,
+                          height: 5,
+                        ),
                       ),
+                      hintText: 'Search Marriage, career, etc.,',
+                      hintStyle: TextStyle(
+                        fontFamily: GoogleFonts.poppins().fontFamily,
+                        fontSize: 16,
+                        color: const Color(0xff64658A),
+                      ),
+
+                      // prefix: Row(
+                      //   mainAxisAlignment: MainAxisAlignment.start,
+                      //   children: [
+                      //     const SizedBox(width: 5),
+                      //     Image.asset(
+                      //       'assets/images/search.png',
+                      //       fit: BoxFit.cover,
+                      //       height: 20,
+                      //     ),
+                      //     const SizedBox(width: 15),
+                      //     Text(
+                      //       'Search Marriage, career, etc.,',
+                      //       style: TextStyle(
+                      //         fontFamily: GoogleFonts.poppins().fontFamily,
+                      //         fontSize: 16,
+                      //         color: const Color(0xff64658A),
+                      //       ),
+                      //     )
+                      //   ],
+                      // ),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
                         borderSide: BorderSide.none,
@@ -95,7 +116,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 const SizedBox(height: 20),
-                TabSelector(),
+                const TabSelector(),
                 const SizedBox(height: 20),
                 Text(
                   'Marriage',
