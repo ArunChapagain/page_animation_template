@@ -53,7 +53,7 @@ class AstrologyAnimationState extends State<AstrologyAnimation>
       vsync: this,
     );
 
-    _blueCircleAnimation = Tween<double>(begin: -240.w, end: -77.w).animate(
+    _blueCircleAnimation = Tween<double>(begin: -240.w, end: -77).animate(
       CurvedAnimation(
         parent: _controller,
         curve: const Interval(0.0, 0.4, curve: Curves.easeInOut),
@@ -69,28 +69,28 @@ class AstrologyAnimationState extends State<AstrologyAnimation>
     );
 
     // Initialize other orbit animations
-    _orbit1Animation = Tween<double>(begin: -351.85.w, end: -150.91).animate(
+    _orbit1Animation = Tween<double>(begin: -351.85, end: -150.91).animate(
       CurvedAnimation(
         parent: _orbitController,
         curve: const Interval(0, 0.4, curve: Curves.easeInOut),
       ),
     );
 
-    _orbit2Animation = Tween<double>(begin: -495.03.w, end: -233).animate(
+    _orbit2Animation = Tween<double>(begin: -495.03, end: -233).animate(
       CurvedAnimation(
         parent: _orbitController,
         curve: const Interval(0, 0.4, curve: Curves.easeInOut),
       ),
     );
 
-    _orbit3Animation = Tween<double>(begin: -630.63.w, end: -280.05).animate(
+    _orbit3Animation = Tween<double>(begin: -630.63, end: -280.05).animate(
       CurvedAnimation(
         parent: _orbitController,
         curve: const Interval(0, 0.4, curve: Curves.easeInOut),
       ),
     );
 
-    _orbit4Animation = Tween<double>(begin: -755.93.w, end: -303.64).animate(
+    _orbit4Animation = Tween<double>(begin: -755.93, end: -303.64).animate(
       CurvedAnimation(
         parent: _orbitController,
         curve: const Interval(0, 0.4, curve: Curves.easeInOut),
@@ -351,7 +351,7 @@ class AstrologyAnimationState extends State<AstrologyAnimation>
 
   void _onItemTap(String item) {
     setState(() {
-      _orbitController.reverse(from: 0.3);
+      _orbitController.reverse(from: 0.2);
     });
     _startAnimation();
     // Start the circle-to-rectangle transition
